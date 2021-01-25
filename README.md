@@ -16,7 +16,7 @@ Sign up for a free RevenueCat account and get an API key [here](https://codewith
 
 ## About CodeWithChris
 
-Hi I’m Chris! I’m dedicated to teaching fundamentals about how to make an app. This is important if you’re trying to land an iOS job, be a freelancer, increase or start a business with an app idea. On the site, you'll find a ton of free resources and tutorials to aid you on your journey to learn iOS development. Many people have successfully picked up Swift 5, Xcode 12 and app development from my course and materials!
+Hi I’m Chris! I’m dedicated to teaching fundamentals about how to make an app. This is important if you’re trying to land an iOS job, be a freelancer, increase or start a business with an app idea. On the site, you'll find a ton of free resources and tutorials to aid you on your journey to learn iOS development. Many people have successfully picked up Swift, Xcode and app development from my course and materials!
 
 Website ► [https://codewithchris.com/](https://codewithchris.com/)
 Courses ► [https://learn.codewithchris.com/](https://learn.codewithchris.com/)
