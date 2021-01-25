@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8314328A257596300034FE3A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83143289257596300034FE3A /* StoreKit.framework */; };
+		83549B5D25893B2700C739A1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83549B5C25893B2700C739A1 /* Constants.swift */; };
+		83B8F2D3256C5C050047B8AB /* calm_mindApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B8F2D2256C5C050047B8AB /* calm_mindApp.swift */; };
+		83B8F2D5256C5C050047B8AB /* FeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B8F2D4256C5C050047B8AB /* FeaturedView.swift */; };
+		83B8F2D7256C5C080047B8AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B8F2D6256C5C080047B8AB /* Assets.xcassets */; };
+		83B8F2DA256C5C080047B8AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B8F2D9256C5C080047B8AB /* Preview Assets.xcassets */; };
+		83B8F2E3256D875E0047B8AB /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B8F2E2256D875E0047B8AB /* Meditation.swift */; };
+		83B8F2EA256D8E2B0047B8AB /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B8F2E9256D8E2B0047B8AB /* Card.swift */; };
+		83DAFD07256D9E7800DCBB0D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DAFD06256D9E7800DCBB0D /* DetailView.swift */; };
+		83DAFD0B256DB70A00DCBB0D /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DAFD0A256DB70A00DCBB0D /* AVKit.framework */; };
+		83DAFD0E256DB7CA00DCBB0D /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DAFD0D256DB7CA00DCBB0D /* AudioService.swift */; };
+		83DAFD19256EB20800DCBB0D /* PurchaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DAFD18256EB20800DCBB0D /* PurchaseService.swift */; };
+		83ECE3C92571502A00CFE50F /* MedidationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECE3C82571502A00CFE50F /* MedidationModel.swift */; };
+		8636E72912072B534BB35897 /* Pods_calm_mind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32139D220445AF9A5887F44C /* Pods_calm_mind.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14489AE3477EC945870B7A9C /* Pods-calm-mind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calm-mind.debug.xcconfig"; path = "Target Support Files/Pods-calm-mind/Pods-calm-mind.debug.xcconfig"; sourceTree = "<group>"; };
+		32139D220445AF9A5887F44C /* Pods_calm_mind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calm_mind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83143289257596300034FE3A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		83549B5C25893B2700C739A1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		83B8F2CF256C5C050047B8AB /* calm-mind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "calm-mind.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B8F2D2256C5C050047B8AB /* calm_mindApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calm_mindApp.swift; sourceTree = "<group>"; };
+		83B8F2D4256C5C050047B8AB /* FeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedView.swift; sourceTree = "<group>"; };
+		83B8F2D6256C5C080047B8AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83B8F2D9256C5C080047B8AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		83B8F2DB256C5C080047B8AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B8F2E2256D875E0047B8AB /* Meditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
+		83B8F2E9256D8E2B0047B8AB /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		83DAFD06256D9E7800DCBB0D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		83DAFD0A256DB70A00DCBB0D /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		83DAFD0D256DB7CA00DCBB0D /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		83DAFD18256EB20800DCBB0D /* PurchaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseService.swift; sourceTree = "<group>"; };
+		83ECE3C82571502A00CFE50F /* MedidationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedidationModel.swift; sourceTree = "<group>"; };
+		A510901CCF618DA7EDD28138 /* Pods-calm-mind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calm-mind.release.xcconfig"; path = "Target Support Files/Pods-calm-mind/Pods-calm-mind.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83B8F2CC256C5C050047B8AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8314328A257596300034FE3A /* StoreKit.framework in Frameworks */,
+				83DAFD0B256DB70A00DCBB0D /* AVKit.framework in Frameworks */,
+				8636E72912072B534BB35897 /* Pods_calm_mind.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78A768055F5B056A3590146D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14489AE3477EC945870B7A9C /* Pods-calm-mind.debug.xcconfig */,
+				A510901CCF618DA7EDD28138 /* Pods-calm-mind.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		83B8F2C6256C5C050047B8AB = {
+			isa = PBXGroup;
+			children = (
+				83B8F2D1256C5C050047B8AB /* calm-mind */,
+				83B8F2D0256C5C050047B8AB /* Products */,
+				83DAFD09256DB70900DCBB0D /* Frameworks */,
+				78A768055F5B056A3590146D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		83B8F2D0256C5C050047B8AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83B8F2CF256C5C050047B8AB /* calm-mind.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83B8F2D1256C5C050047B8AB /* calm-mind */ = {
+			isa = PBXGroup;
+			children = (
+				83B8F2D2256C5C050047B8AB /* calm_mindApp.swift */,
+				83B8F2EC256D90A10047B8AB /* Views */,
+				83ECE3C725714FF800CFE50F /* ViewModels */,
+				83B8F2ED256D90AC0047B8AB /* Models */,
+				83DAFD0C256DB7B800DCBB0D /* Helper */,
+				83B8F2D6256C5C080047B8AB /* Assets.xcassets */,
+				83B8F2DB256C5C080047B8AB /* Info.plist */,
+				83B8F2D8256C5C080047B8AB /* Preview Content */,
+			);
+			path = "calm-mind";
+			sourceTree = "<group>";
+		};
+		83B8F2D8256C5C080047B8AB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				83B8F2D9256C5C080047B8AB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		83B8F2EC256D90A10047B8AB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83B8F2D4256C5C050047B8AB /* FeaturedView.swift */,
+				83B8F2E9256D8E2B0047B8AB /* Card.swift */,
+				83DAFD06256D9E7800DCBB0D /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		83B8F2ED256D90AC0047B8AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83B8F2E2256D875E0047B8AB /* Meditation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		83DAFD09256DB70900DCBB0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83143289257596300034FE3A /* StoreKit.framework */,
+				83DAFD0A256DB70A00DCBB0D /* AVKit.framework */,
+				32139D220445AF9A5887F44C /* Pods_calm_mind.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83DAFD0C256DB7B800DCBB0D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				83DAFD0D256DB7CA00DCBB0D /* AudioService.swift */,
+				83DAFD18256EB20800DCBB0D /* PurchaseService.swift */,
+				83549B5C25893B2700C739A1 /* Constants.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		83ECE3C725714FF800CFE50F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				83ECE3C82571502A00CFE50F /* MedidationModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83B8F2CE256C5C050047B8AB /* calm-mind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83B8F2DE256C5C080047B8AB /* Build configuration list for PBXNativeTarget "calm-mind" */;
+			buildPhases = (
+				2B51AD19419C6AAE5E4CCE23 /* [CP] Check Pods Manifest.lock */,
+				83B8F2CB256C5C050047B8AB /* Sources */,
+				83B8F2CC256C5C050047B8AB /* Frameworks */,
+				83B8F2CD256C5C050047B8AB /* Resources */,
+				5D7B9D58696F3A4A05380CD9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "calm-mind";
+			productName = "calm-mind";
+			productReference = 83B8F2CF256C5C050047B8AB /* calm-mind.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83B8F2C7256C5C050047B8AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					83B8F2CE256C5C050047B8AB = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 83B8F2CA256C5C050047B8AB /* Build configuration list for PBXProject "calm-mind" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83B8F2C6256C5C050047B8AB;
+			productRefGroup = 83B8F2D0256C5C050047B8AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83B8F2CE256C5C050047B8AB /* calm-mind */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83B8F2CD256C5C050047B8AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B8F2DA256C5C080047B8AB /* Preview Assets.xcassets in Resources */,
+				83B8F2D7256C5C080047B8AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B51AD19419C6AAE5E4CCE23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-calm-mind-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D7B9D58696F3A4A05380CD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calm-mind/Pods-calm-mind-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calm-mind/Pods-calm-mind-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-calm-mind/Pods-calm-mind-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83B8F2CB256C5C050047B8AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83DAFD0E256DB7CA00DCBB0D /* AudioService.swift in Sources */,
+				83DAFD19256EB20800DCBB0D /* PurchaseService.swift in Sources */,
+				83B8F2E3256D875E0047B8AB /* Meditation.swift in Sources */,
+				83B8F2D5256C5C050047B8AB /* FeaturedView.swift in Sources */,
+				83B8F2D3256C5C050047B8AB /* calm_mindApp.swift in Sources */,
+				83DAFD07256D9E7800DCBB0D /* DetailView.swift in Sources */,
+				83B8F2EA256D8E2B0047B8AB /* Card.swift in Sources */,
+				83ECE3C92571502A00CFE50F /* MedidationModel.swift in Sources */,
+				83549B5D25893B2700C739A1 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		83B8F2DC256C5C080047B8AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83B8F2DD256C5C080047B8AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83B8F2DF256C5C080047B8AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14489AE3477EC945870B7A9C /* Pods-calm-mind.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"calm-mind/Preview Content\"";
+				DEVELOPMENT_TEAM = RYRJQ978K4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "calm-mind/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codewithchris.calm-mind2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83B8F2E0256C5C080047B8AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A510901CCF618DA7EDD28138 /* Pods-calm-mind.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"calm-mind/Preview Content\"";
+				DEVELOPMENT_TEAM = RYRJQ978K4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "calm-mind/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codewithchris.calm-mind2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83B8F2CA256C5C050047B8AB /* Build configuration list for PBXProject "calm-mind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B8F2DC256C5C080047B8AB /* Debug */,
+				83B8F2DD256C5C080047B8AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83B8F2DE256C5C080047B8AB /* Build configuration list for PBXNativeTarget "calm-mind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B8F2DF256C5C080047B8AB /* Debug */,
+				83B8F2E0256C5C080047B8AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83B8F2C7256C5C050047B8AB /* Project object */;
+}

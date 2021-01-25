@@ -1,0 +1,1265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		052E739017171D657D8E2692CCA20E04 /* RCPackage.h in Headers */ = {isa = PBXBuildFile; fileRef = B18B516B38CB919E56F69CEB9F1FFAFA /* RCPackage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0653BAEADF463B2AA3DDCFA7FA45FBD0 /* RCBackend.h in Headers */ = {isa = PBXBuildFile; fileRef = B0A6A761A1022A586416C5D2FFD784FC /* RCBackend.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		080B618ABD58BA804F310D1738069665 /* TransactionsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114910BCF10B7F8073A5D6E9A0393223 /* TransactionsFactory.swift */; };
+		08DA5DC6F3DEA5F41B46B4D9A8503576 /* IntroEligibilityCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF25A9E7FA44BFD4EC6B13767F8FFACD /* IntroEligibilityCalculator.swift */; };
+		0D0879E27EC40A0C11E5BAA90DDE4057 /* RCOfferingsFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = D9CF792C28585574974AD4308217108D /* RCOfferingsFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0D93143BB57C99571484EB3E85AB46AF /* RCReceiptFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C36A53CB66891C484755C46C4C3E046E /* RCReceiptFetcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0EA5CA5E695DD29759048E3050557004 /* RCOffering.h in Headers */ = {isa = PBXBuildFile; fileRef = B0B29788AB1EA25837D8E3DB2B49FC65 /* RCOffering.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13CA36D487C0BC06ADFE309D4D37252D /* RCBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = 10EB77477F1E2D60E0239CEDCCE32C8B /* RCBackend.m */; };
+		13CAA41D53F756C71703E697A65CD165 /* RCDeviceCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D4A311AEAB4058B2CEAD160E98CFD01 /* RCDeviceCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		14B1925DABCB3E22E64078867A9341AD /* NSError+RCExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = ECBAC03BAC58431A9F190F96A904049C /* NSError+RCExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		152C78F28E05148F25344309D5D8BC19 /* RCSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = BE9841AA391181AB8B3B92CA23E2C671 /* RCSystemInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		195024D5BD9D0B94DA711E4EE21F6E14 /* RCSubscriberAttributesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FA1F6A03FF84FEA75AAC5660A33A499 /* RCSubscriberAttributesManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1D4EDC4A4AE28D148570C0C47860E193 /* RCIntroEligibility+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = BE502930B1B7329B22A0DAB16E98C667 /* RCIntroEligibility+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1F8426DB406567E4CDAC3B8AC97458B5 /* RCDateProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 124A50234EBFD5715CFC628684457F8B /* RCDateProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		25CEF2FAC4E39E0E65417CE47C827E20 /* RCPurchasesErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4B2817C5F791D0FE79EC98CF2127EC /* RCPurchasesErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25FBF59814A4D17212888706FF692D40 /* RCHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 361B923A02B326398D77965EF3B3EB82 /* RCHTTPRequest.m */; };
+		268C923D5753A23AC098C97B7CFBBE5F /* RCAttributionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B5707CBAA2A5605C84CEE0093F7FD1 /* RCAttributionData.m */; };
+		270AD49631F9FFECB3141C060983A2B9 /* NSDictionary+RCExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A80CF445038C04D5ED8C595DEE245F1 /* NSDictionary+RCExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2737E46BE7534441D3F4C9109F319A09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7CDA4363CBEC03E06A56F9FD1A9E3A /* Foundation.framework */; };
+		298207D63E4FE3C8A5AFDCE6FFAB967A /* RCIntroEligibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 49C559C85BE98795A63EB9D2B8645817 /* RCIntroEligibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A56178D9AE4CA3D9A344827807E7124 /* ASN1ContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C794EE6592B00A40C018046C38A5B8 /* ASN1ContainerBuilder.swift */; };
+		323CC37A59200E1139B68DC6F800A760 /* RCProductInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D6818D2A4E2018FE4C31FCA0C8E233E4 /* RCProductInfo.m */; };
+		335945CDC95AAC3776B77531F1FC6EB3 /* Pods-calm-mind-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FE2E828245B552334F9F54A18F829DF /* Pods-calm-mind-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33B863578764A476F05F49FBA686F7A6 /* RCStoreKitRequestFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AA770232C5D89C4BDFAEF9E0DD924C /* RCStoreKitRequestFetcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		37A839D754E695E553DF46FAB66D3354 /* RCSubscriberAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = C748A76A4F0C79AEE1C5F9612D2A9956 /* RCSubscriberAttribute.m */; };
+		37E05321FF1723AC6DFBFEC30D8BDE67 /* RCInMemoryCachedObject+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = CCEE8055B624818B24F36BE8DC4CFCD1 /* RCInMemoryCachedObject+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3899A105EEED58439560FCA4B0C43701 /* RCStoreKitWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E49EB50DABB9B321C38F5BBB45B2D9 /* RCStoreKitWrapper.m */; };
+		397093C3046EBFE4036A8D6E4C25278F /* Pods-calm-mind-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A45955A573A5BED016455CF3CE612B77 /* Pods-calm-mind-dummy.m */; };
+		3A2FCCF03349542E73EF906625CF2339 /* InAppPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7394DB39CF5B2EB6009AEA6D3571E3F3 /* InAppPurchase.swift */; };
+		3DFCA7264A1CEC49E99113565F04EA84 /* NSData+RCExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = C161B11FD1D750BD5A9D74A48BC8282A /* NSData+RCExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3E2C1D4612C2DA8886CEF2FA4903AE93 /* RCEntitlementInfos.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D825FAC3BCB363EEB74F5ACF13B84E3 /* RCEntitlementInfos.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F682A9EEF9225584D975F0725D2639A /* NSData+RCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CE1B20D4C076BC50BE5B23DE3A7B77 /* NSData+RCExtensions.m */; };
+		40C86BE73AC9784C373B522E45C6FE8B /* RCOfferings.h in Headers */ = {isa = PBXBuildFile; fileRef = 48DEB902CA1616E7B8C596DBF11E97D5 /* RCOfferings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C895B65A73DE0B1DD2568196255B52 /* RCHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FF1B6291AE7422ABC5C5D08DBD48512 /* RCHTTPRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4278DE079796BE3122519B09535A85BD /* RCEntitlementInfo+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = CA4D6144AACAA1226E6154C42A96C851 /* RCEntitlementInfo+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4283E4027EF567DAC64F3A445DEC7990 /* RCSubscriberAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 555B5AD5FE59DDC25B8D9392E2C447C9 /* RCSubscriberAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		428F24D52D4333BF9D4E70CC310900A7 /* RCEntitlementInfos+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D24A9C1A350D099BD5A9BD42C74BDD2 /* RCEntitlementInfos+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		452BE9C5120CA543ECE0313F9C6FDFEE /* RCAttributionNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EEBD93F0C41F78359E23EDA302F2154 /* RCAttributionNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		459E0A9E40A0591B346A83402FFF4328 /* RCTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2A429ECB9957E19C8CCE61939287BB /* RCTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45AA3B9447875657972E31005E2A227C /* RCPurchases.h in Headers */ = {isa = PBXBuildFile; fileRef = 582BC2C0929CBBDDFE1248F40DA3C6C6 /* RCPurchases.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46F3AE65F1B549D5F211B2459AD5E549 /* RCHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1FDCE4ED0ECB32004BBEE12BA098D8 /* RCHTTPClient.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46FE7DD5DA778F124DF8465BEFD7CFF4 /* RCOffering.m in Sources */ = {isa = PBXBuildFile; fileRef = 555CB795614C8C1A21512571D4DDE054 /* RCOffering.m */; };
+		4D60B35A9692461A83C67FDC444FEBB5 /* RCPurchasesErrorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E1A6A563103DDE5AB8D0F7534FFEE /* RCPurchasesErrorUtils.m */; };
+		4E318D0E488A7CD6F340A59483E11FA7 /* NSLocale+RCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 76110519B9CDB08F38CA55FD52FCB360 /* NSLocale+RCExtensions.m */; };
+		508B969E293E9D530C35D452ECC7F2C7 /* AppleReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF77AFF86606093AF1F7E11773246218 /* AppleReceipt.swift */; };
+		5215CCABC9B7AFACB1C0B93B0A2AD672 /* RCEntitlementInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC0E4283339CE2ED89CD95A9D51AA22 /* RCEntitlementInfo.m */; };
+		52E78F29B7B6E85D600B1041342109DB /* RCStoreKitWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = ECA69D894E55BFBF0FBEEBC436DA94D6 /* RCStoreKitWrapper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		54BA9227A6734B2E20217E646C93A5B0 /* RCPurchases+SubscriberAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 70864B89729AF520A10C907EFF84CD09 /* RCPurchases+SubscriberAttributes.m */; };
+		55FC26FB3398D6D794E287AEBA5F9BC4 /* ASN1ObjectIdentifierBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39202D54CEED9CDE54EF82F0FAB78B9 /* ASN1ObjectIdentifierBuilder.swift */; };
+		5AFB6B9138598A7ABC3BAF9A2A4903BB /* RCOfferings+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FE91D88F08BC0028FF70FFC1BD6CE5C /* RCOfferings+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5B10E365017D8E54A7172155139E7E32 /* PurchasesCoreSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B51404464C4EB6D4C594037AEB68841 /* PurchasesCoreSwift.framework */; };
+		5C4055F7B4015328AF63A134C16D79C8 /* RCStoreKitRequestFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DB17BA34F6E64BA30BEE9C759507FBCC /* RCStoreKitRequestFetcher.m */; };
+		5CEDA03C5DAFC9D0975D9CF6562087A0 /* RCEntitlementInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F376F8D502696D1F0A3B8D939C5B9F9F /* RCEntitlementInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F3FC37844F858D7EF4AB3E61576140B /* RCPurchases+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 52A83F1E964B29B798FF233551EBD489 /* RCPurchases+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		64AF544E5B5329574EF5037E46D5C7FA /* RCLogUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 515BF29A3F0AE7785CF4EA4FEEA058ED /* RCLogUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		64DDCDEBE4C7663DE788A835067C1923 /* RCPurchases.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FFED19270862243CE1F39953F3676F /* RCPurchases.m */; };
+		65028C2B3E7B787B704C42606E736371 /* UInt8+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A053C4FCA4F5CF5F08EBCB564E90B5B9 /* UInt8+Extensions.swift */; };
+		66592755E68603B4F9762B111EDA3526 /* RCDateProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2689EE18445FF7384E7373AFC589A4 /* RCDateProvider.m */; };
+		6750743F1C6783FAC8E4161CD57F315B /* NSLocale+RCExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7859E2965542F60D5B0B70D58A5095 /* NSLocale+RCExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		67EBC24E08D6DC0D3A53FE5AF7F6AE6F /* RCOfferingsFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B042D1EB2F66D7986DAAAAA359896E1B /* RCOfferingsFactory.m */; };
+		686EF1EE35E0D02AE6FD9751FB3C3839 /* OperationDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B6AD8CB509157DE4DA8C3DAEF15D29 /* OperationDispatcher.swift */; };
+		688C879CAB8FA63547436A5FC9218554 /* InAppPurchaseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C838FD0A18FE48AE8D1237C6A8F24FCB /* InAppPurchaseBuilder.swift */; };
+		69010EF98D54267770E13579A1D5EFC3 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6D36D415ED94FECA27A8C1123507DB /* Strings.swift */; };
+		69321C7A5D5F3E23833EABBC41150392 /* ASN1ObjectIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311EDFA3232595897C0F1D363AD5A96B /* ASN1ObjectIdentifier.swift */; };
+		6A4BEC3FEA72DC3C0B91509A850533DA /* RCAttributionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B6AE2B327C0B11B31D442A6F01B496 /* RCAttributionFetcher.m */; };
+		6C570D0F32E71D4AFBC834293A683169 /* RCProductInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE433AB2A04ACCE7835951FBDCADCE3 /* RCProductInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6C9B5A0CE8BF3253E20229EDAFDAC12A /* RCHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 042476F9492D1C094E5130F52DF6E78E /* RCHTTPClient.m */; };
+		71861AAA6F7FAC798B789F4C4837A51C /* RCReceiptFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7204ED0655F389582BA8E59DCB19190B /* RCReceiptFetcher.m */; };
+		733B1A205CCD9F93D4D6A2930E912D97 /* RCPurchases+SubscriberAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 73DDE5281E0C43DD02C519D43263C1DE /* RCPurchases+SubscriberAttributes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		79EB563DC883ABF028727C110F14F46C /* PurchasesCoreSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D899CB8D73C3CFBC5EA0C6294891A2 /* PurchasesCoreSwift-dummy.m */; };
+		7AFA33F27E3FE5278AA577AABCB58726 /* RCPromotionalOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 05594E329B395E495E76774FF3069B1D /* RCPromotionalOffer.m */; };
+		7D787FBC2622A66C158F64C52978BCF1 /* PurchasesCoreSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E485310A76B571F082279DB13567531 /* PurchasesCoreSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		817AC795B4736545B1C77CCDFD5F6A81 /* ReceiptParsingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428F420B70D82F82760CC4B95DF17CAD /* ReceiptParsingError.swift */; };
+		8217E352CAAE9AD355D9CD76EF76C822 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1000410AABAC8444B7B26CD6F6BDB0 /* StoreKit.framework */; };
+		8451B2FD631DCD15286F36DB5C964B0A /* RCSpecialSubscriberAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 333E0056461D64D02DCD2CD8743B88F5 /* RCSpecialSubscriberAttributes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		84E4D2CB4BAF15436064DD440F86A43E /* ProductsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E92C9EE4CF219E24F8A3A9536E5EAF2 /* ProductsManager.swift */; };
+		88EA2ED684283EB2D9B350748CC1BA74 /* RCReceiptRefreshPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FDA277300CB36F21E910CC7B4B8133 /* RCReceiptRefreshPolicy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		89682F97BA5CCB7AF043549CD4BD2789 /* ReceiptParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3123EB27C9638F33576412BF2CDE500 /* ReceiptParser.swift */; };
+		89AB6DBE4DF5C18347827AEC4899A780 /* RCInMemoryCachedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8436C1F141D89154A722EFDE05DB35 /* RCInMemoryCachedObject.m */; };
+		89D0FF1B40D5E981514FE669C8A8643F /* NSError+RCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 125FD6C3511778DCDC980EA15CB92ED0 /* NSError+RCExtensions.m */; };
+		8D57263836FD33060ACBAD9F14083C9E /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EFCD12F97032C865F401FE49D18175 /* DateExtensions.swift */; };
+		9966D70E0E9E00D82605AD97F4086716 /* RCPackage+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = F3BEB273020E4FA1D6AF1263EA04AD3E /* RCPackage+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		996F33FFFE67324A69AA5CBCA761D014 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7CDA4363CBEC03E06A56F9FD1A9E3A /* Foundation.framework */; };
+		9E86B1F2450339BCCEB67DB8F36EE434 /* NSDate+RCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 122CCD37D70A959FD7C6ADC4BF3E7C75 /* NSDate+RCExtensions.m */; };
+		A1FB2E1D613974FB63ABEF649DA49457 /* RCIntroEligibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B6790723217DCAF7A28EEE80C662B9 /* RCIntroEligibility.m */; };
+		A678028AF0BFEE6861252AC39F94513B /* RCAttributionFetcher+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B2C3EDE5B57E2CCE12B391F729E549 /* RCAttributionFetcher+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B0B995B8CA9C6C5574AF99B67A35A661 /* RCHTTPStatusCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 11890ACA10FC7E794DB73A8CBBB8BF12 /* RCHTTPStatusCodes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B0BE61DE96E7DEAA2C0E205A9405373E /* RCAttributionFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4AC0716265C371E1211F1ACB431E80 /* RCAttributionFetcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B20598774B6B58A3852514196429AD83 /* RCSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DBF669839138836F3A0C6FCFF2229C /* RCSystemInfo.m */; };
+		B3D2DBB77672221B4126DCB8C11821D7 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733D005D38DF2017B18A8D090CAAD63F /* Transaction.swift */; };
+		B9E2CE14F784493FB6B5AB8B6CD2749D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1000410AABAC8444B7B26CD6F6BDB0 /* StoreKit.framework */; };
+		BB7167CA498C8FE4C1CA3AF31F9744E2 /* ArraySlice_UInt8+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426521AD968BA19443CC3EA3AD72A71 /* ArraySlice_UInt8+Extensions.swift */; };
+		BC3809E415A4C1CF361130ACB7F3C145 /* RCPromotionalOffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37CD2284ED39FF6B6DFA67238C16131A /* RCPromotionalOffer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BE1799BE116B4C087916E28AB71F081B /* AppleReceiptBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E9965A8AB4C947148376228F54644A /* AppleReceiptBuilder.swift */; };
+		BF6E0C4C5186DA1B2955634AD84E40BC /* NSDictionary+RCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 839CA53622CA80F5B21F486CAD6D1520 /* NSDictionary+RCExtensions.m */; };
+		BFD2CBC47F4B91B6DF0904EE3ECCF054 /* RCLogUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5FCF84BA66FA266578CD949C6269F /* RCLogUtils.m */; };
+		C024F901878341E0D74C3B796FBD5506 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7CDA4363CBEC03E06A56F9FD1A9E3A /* Foundation.framework */; };
+		C11E0DAB9E71DA372242FB956E9AC209 /* RCPurchasesErrorUtils+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = A80A02A31E5CED7391D8CF2F296DF889 /* RCPurchasesErrorUtils+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C1FEDDC5A620BD30471F5021411AB54F /* RCDeviceCache+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 69C49351E43EE9FE7A932C3FCC0C3928 /* RCDeviceCache+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C23235DB8FFB65AB7662D13B07F1B016 /* RCPurchasesErrorUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9054DA2B11B1187DE2C99A18ACBB9C3B /* RCPurchasesErrorUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C32AE550265BE3734DE37379C92AB172 /* RCOffering+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BA90C035390215B55F083EF6C840543 /* RCOffering+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C5A1ACFBBDC55643594562B2DBB98273 /* RCPurchaserInfo+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 659E996DFDE3DFC83E7D74C6093663AA /* RCPurchaserInfo+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C5D14153A9A27A52EF745D23AC05A224 /* Purchases.h in Headers */ = {isa = PBXBuildFile; fileRef = FD26BBAE872A26DB38C2EAE001F5E5CE /* Purchases.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7FD55F097E9884ABBB6CC54782769D1 /* ISO3601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526273982E86AFBDBBDA8697EF8467E /* ISO3601DateFormatter.swift */; };
+		C8678F96B402A67762933E6F7BD261F3 /* RCSubscriberAttribute+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = D72540A38557949101A58492389AA57F /* RCSubscriberAttribute+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C8F7B485A358F76FD93036187080D3D4 /* AttributionStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC67BC7F7282D8655B55A4F3481A21A0 /* AttributionStrings.swift */; };
+		CD7EF1412B7FC27E8F43588291EC1A03 /* RCInMemoryCachedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = E8CB868C95DABC416B724CAAF864465D /* RCInMemoryCachedObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CFC6D608887CDC187FFCD82C17BF6C98 /* RCISOPeriodFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 760FB05E050EA4677F4B73AEBEFE612A /* RCISOPeriodFormatter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D60BF519F5703F1638570F7DBE1F7850 /* Purchases-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A1650DA24673A3A9727E0513CD4D89 /* Purchases-dummy.m */; };
+		D99983BF93297FA586A0171683CCB407 /* RCProductInfoExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 30A05696E1D0ABCC40278056A9956AE2 /* RCProductInfoExtractor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D9D26CCD5543A430129CE008A01E5ECA /* RCProductInfoExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD384F0BD68E4D4E763AD49D4EF280 /* RCProductInfoExtractor.m */; };
+		DE93F9CB669648DDD8A707EB79ACE95B /* RCAttributionData.h in Headers */ = {isa = PBXBuildFile; fileRef = B21B0F45421CC76D06121EF87F55332F /* RCAttributionData.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E04092BB9BC901014BB66DF9EC50F2DF /* RCCrossPlatformSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = F0BADA16264EF9114E22FCBD946C1C56 /* RCCrossPlatformSupport.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E184D53C48FE168C9977624473676A1E /* RCIdentityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 67427849AEE43264D4F64CBCAED6915E /* RCIdentityManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E8E9D76A9EA04553588F12A46EC5CC3E /* RCPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CCC165573958BD15E27C44DA71C49B /* RCPackage.m */; };
+		EA8F11A20AFA442A54285C79A822E78D /* RCISOPeriodFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C2614685CA876F5AA972FB72A0DBCED5 /* RCISOPeriodFormatter.m */; };
+		EC3328778FFE688561C8176F182EBCBE /* RCOfferings.m in Sources */ = {isa = PBXBuildFile; fileRef = 952EB5DDF4708544AD1FDE79482C3E20 /* RCOfferings.m */; };
+		ED29727A66C6064B17613A2153B1C450 /* NSDate+RCExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = DAACD9EE505D16DAD65EF789D1AA40C9 /* NSDate+RCExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EFD468C47E81A1D3E9EE03F907EC724B /* RCPromotionalOffer+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = E41B8D9D4F09B258105451FD3FB87222 /* RCPromotionalOffer+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F09515456D553C816B5A87A53EAA1FCE /* RCIdentityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E9326261BC43C2E3CA956EC92ACC41 /* RCIdentityManager.m */; };
+		F1134D60B6B50216BD1D284AF30F8F61 /* Purchases-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D0B09DAC8910E8F46B124066C156A0B /* Purchases-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3995BBD875D1474CA1A0F57E4ED4B42 /* RCSubscriberAttributesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA39B7E1B1F6EA2534C96EAC11EC5714 /* RCSubscriberAttributesManager.m */; };
+		F544AB89C05AAC723FC1089709E7377F /* RCEntitlementInfos.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBF4ED12EB9A25365F994D55ACCDBE1 /* RCEntitlementInfos.m */; };
+		F792580943AF69C52023DE9060E9EEC4 /* ASN1Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9A37949EF51C553DFF415DCA9825B4 /* ASN1Container.swift */; };
+		FBECA83B8E280FDB6DAFCE9048B8550F /* RCPurchaserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 416018C6B3F7A403074FD293FF0C4BB8 /* RCPurchaserInfo.m */; };
+		FCF3A8A035E869F33B56468E097C3FED /* RCPurchaserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 749AF730CE213FF10A861F95A657834A /* RCPurchaserInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE02197675E297AEEDB249FB33CBBD6A /* RCDeviceCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A04AAA9428B695A2E42579BCE1DE6BEE /* RCDeviceCache.m */; };
+		FE889AE379F62C9ED547A83C42A2A9AE /* ProductsRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D1F4D40113420225A5F981BB1D8D7 /* ProductsRequestFactory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		740944A13D88C81B42BD9BFA75034603 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19EF5509BA60F0CD4916B9F24A2F7886;
+			remoteInfo = Purchases;
+		};
+		9E44F9EE268BAB5681A411DAC8AF5513 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BC2CC6A5EB8F91429DC14E6BDC342DF;
+			remoteInfo = PurchasesCoreSwift;
+		};
+		FCC298E20725D272E532AF5F65CBC491 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BC2CC6A5EB8F91429DC14E6BDC342DF;
+			remoteInfo = PurchasesCoreSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		042476F9492D1C094E5130F52DF6E78E /* RCHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCHTTPClient.m; path = Purchases/Networking/RCHTTPClient.m; sourceTree = "<group>"; };
+		05594E329B395E495E76774FF3069B1D /* RCPromotionalOffer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCPromotionalOffer.m; path = Purchases/Purchasing/RCPromotionalOffer.m; sourceTree = "<group>"; };
+		087225F362E5FB6A81CC8F5C4BFD86A2 /* Purchases.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Purchases.release.xcconfig; sourceTree = "<group>"; };
+		0C0E1A6A563103DDE5AB8D0F7534FFEE /* RCPurchasesErrorUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCPurchasesErrorUtils.m; path = Purchases/Public/RCPurchasesErrorUtils.m; sourceTree = "<group>"; };
+		0CF5FCF84BA66FA266578CD949C6269F /* RCLogUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCLogUtils.m; path = Purchases/Misc/RCLogUtils.m; sourceTree = "<group>"; };
+		0D0B09DAC8910E8F46B124066C156A0B /* Purchases-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Purchases-umbrella.h"; sourceTree = "<group>"; };
+		0E485310A76B571F082279DB13567531 /* PurchasesCoreSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PurchasesCoreSwift-umbrella.h"; sourceTree = "<group>"; };
+		10EB77477F1E2D60E0239CEDCCE32C8B /* RCBackend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCBackend.m; path = Purchases/Networking/RCBackend.m; sourceTree = "<group>"; };
+		114910BCF10B7F8073A5D6E9A0393223 /* TransactionsFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransactionsFactory.swift; path = PurchasesCoreSwift/Purchasing/TransactionsFactory.swift; sourceTree = "<group>"; };
+		11890ACA10FC7E794DB73A8CBBB8BF12 /* RCHTTPStatusCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCHTTPStatusCodes.h; path = Purchases/Networking/RCHTTPStatusCodes.h; sourceTree = "<group>"; };
+		122CCD37D70A959FD7C6ADC4BF3E7C75 /* NSDate+RCExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+RCExtensions.m"; path = "Purchases/FoundationExtensions/NSDate+RCExtensions.m"; sourceTree = "<group>"; };
+		124A50234EBFD5715CFC628684457F8B /* RCDateProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCDateProvider.h; path = Purchases/Misc/RCDateProvider.h; sourceTree = "<group>"; };
+		125FD6C3511778DCDC980EA15CB92ED0 /* NSError+RCExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+RCExtensions.m"; path = "Purchases/FoundationExtensions/NSError+RCExtensions.m"; sourceTree = "<group>"; };
+		16B2C3EDE5B57E2CCE12B391F729E549 /* RCAttributionFetcher+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCAttributionFetcher+Protected.h"; path = "Purchases/ProtectedExtensions/RCAttributionFetcher+Protected.h"; sourceTree = "<group>"; };
+		173403D9233DC83DD4A2D8EEED0880BF /* Purchases.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Purchases.debug.xcconfig; sourceTree = "<group>"; };
+		1B1FDCE4ED0ECB32004BBEE12BA098D8 /* RCHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCHTTPClient.h; path = Purchases/Networking/RCHTTPClient.h; sourceTree = "<group>"; };
+		1D4AC0716265C371E1211F1ACB431E80 /* RCAttributionFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCAttributionFetcher.h; path = Purchases/Purchasing/RCAttributionFetcher.h; sourceTree = "<group>"; };
+		1F4B2817C5F791D0FE79EC98CF2127EC /* RCPurchasesErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCPurchasesErrors.h; path = Purchases/Public/RCPurchasesErrors.h; sourceTree = "<group>"; };
+		2E6D36D415ED94FECA27A8C1123507DB /* Strings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Strings.swift; path = PurchasesCoreSwift/Logging/Strings/Strings.swift; sourceTree = "<group>"; };
+		30A05696E1D0ABCC40278056A9956AE2 /* RCProductInfoExtractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCProductInfoExtractor.h; path = Purchases/Purchasing/RCProductInfoExtractor.h; sourceTree = "<group>"; };
+		311EDFA3232595897C0F1D363AD5A96B /* ASN1ObjectIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASN1ObjectIdentifier.swift; path = PurchasesCoreSwift/LocalReceiptParsing/BasicTypes/ASN1ObjectIdentifier.swift; sourceTree = "<group>"; };
+		333E0056461D64D02DCD2CD8743B88F5 /* RCSpecialSubscriberAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCSpecialSubscriberAttributes.h; path = Purchases/SubscriberAttributes/RCSpecialSubscriberAttributes.h; sourceTree = "<group>"; };
+		361B923A02B326398D77965EF3B3EB82 /* RCHTTPRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCHTTPRequest.m; path = Purchases/Networking/RCHTTPRequest.m; sourceTree = "<group>"; };
+		37AA770232C5D89C4BDFAEF9E0DD924C /* RCStoreKitRequestFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCStoreKitRequestFetcher.h; path = Purchases/Purchasing/RCStoreKitRequestFetcher.h; sourceTree = "<group>"; };
+		37CD2284ED39FF6B6DFA67238C16131A /* RCPromotionalOffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCPromotionalOffer.h; path = Purchases/Purchasing/RCPromotionalOffer.h; sourceTree = "<group>"; };
+		3DDD384F0BD68E4D4E763AD49D4EF280 /* RCProductInfoExtractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCProductInfoExtractor.m; path = Purchases/Purchasing/RCProductInfoExtractor.m; sourceTree = "<group>"; };
+		416018C6B3F7A403074FD293FF0C4BB8 /* RCPurchaserInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCPurchaserInfo.m; path = Purchases/Public/RCPurchaserInfo.m; sourceTree = "<group>"; };
+		428F420B70D82F82760CC4B95DF17CAD /* ReceiptParsingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReceiptParsingError.swift; path = PurchasesCoreSwift/LocalReceiptParsing/ReceiptParsingError.swift; sourceTree = "<group>"; };
+		43EA8BB6508F44B39158007B6FBEEAE8 /* Pods-calm-mind-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-calm-mind-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46B5707CBAA2A5605C84CEE0093F7FD1 /* RCAttributionData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCAttributionData.m; path = Purchases/Purchasing/RCAttributionData.m; sourceTree = "<group>"; };
+		48DEB902CA1616E7B8C596DBF11E97D5 /* RCOfferings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCOfferings.h; path = Purchases/Public/RCOfferings.h; sourceTree = "<group>"; };
+		49C559C85BE98795A63EB9D2B8645817 /* RCIntroEligibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCIntroEligibility.h; path = Purchases/Public/RCIntroEligibility.h; sourceTree = "<group>"; };
+		4A80CF445038C04D5ED8C595DEE245F1 /* NSDictionary+RCExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+RCExtensions.h"; path = "Purchases/FoundationExtensions/NSDictionary+RCExtensions.h"; sourceTree = "<group>"; };
+		4C2A429ECB9957E19C8CCE61939287BB /* RCTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTransaction.h; path = Purchases/Public/RCTransaction.h; sourceTree = "<group>"; };
+		4D4A311AEAB4058B2CEAD160E98CFD01 /* RCDeviceCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCDeviceCache.h; path = Purchases/Caching/RCDeviceCache.h; sourceTree = "<group>"; };
+		4DC908152C7FF585FD72F10305133610 /* Pods-calm-mind-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-calm-mind-frameworks.sh"; sourceTree = "<group>"; };
+		5153D49110BC9C6B6321BF255DDDFD03 /* Pods-calm-mind-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-calm-mind-acknowledgements.plist"; sourceTree = "<group>"; };
+		515BF29A3F0AE7785CF4EA4FEEA058ED /* RCLogUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCLogUtils.h; path = Purchases/Misc/RCLogUtils.h; sourceTree = "<group>"; };
+		51A1650DA24673A3A9727E0513CD4D89 /* Purchases-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Purchases-dummy.m"; sourceTree = "<group>"; };
+		52A83F1E964B29B798FF233551EBD489 /* RCPurchases+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCPurchases+Protected.h"; path = "Purchases/ProtectedExtensions/RCPurchases+Protected.h"; sourceTree = "<group>"; };
+		555B5AD5FE59DDC25B8D9392E2C447C9 /* RCSubscriberAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCSubscriberAttribute.h; path = Purchases/SubscriberAttributes/RCSubscriberAttribute.h; sourceTree = "<group>"; };
+		555CB795614C8C1A21512571D4DDE054 /* RCOffering.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCOffering.m; path = Purchases/Public/RCOffering.m; sourceTree = "<group>"; };
+		56D899CB8D73C3CFBC5EA0C6294891A2 /* PurchasesCoreSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PurchasesCoreSwift-dummy.m"; sourceTree = "<group>"; };
+		582BC2C0929CBBDDFE1248F40DA3C6C6 /* RCPurchases.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCPurchases.h; path = Purchases/Public/RCPurchases.h; sourceTree = "<group>"; };
+		58EFCD12F97032C865F401FE49D18175 /* DateExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateExtensions.swift; path = PurchasesCoreSwift/Misc/DateExtensions.swift; sourceTree = "<group>"; };
+		5A1F7866BEEF2AF2C8D2A88FD7944481 /* Purchases-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Purchases-Info.plist"; sourceTree = "<group>"; };
+		5EB42D7C1DE3D1C019814488DC99F2D0 /* Pods-calm-mind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-calm-mind.release.xcconfig"; sourceTree = "<group>"; };
+		5FA1F6A03FF84FEA75AAC5660A33A499 /* RCSubscriberAttributesManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCSubscriberAttributesManager.h; path = Purchases/SubscriberAttributes/RCSubscriberAttributesManager.h; sourceTree = "<group>"; };
+		63FDA277300CB36F21E910CC7B4B8133 /* RCReceiptRefreshPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCReceiptRefreshPolicy.h; path = Purchases/Purchasing/RCReceiptRefreshPolicy.h; sourceTree = "<group>"; };
+		644D1F4D40113420225A5F981BB1D8D7 /* ProductsRequestFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductsRequestFactory.swift; path = PurchasesCoreSwift/Purchasing/ProductsRequestFactory.swift; sourceTree = "<group>"; };
+		659E996DFDE3DFC83E7D74C6093663AA /* RCPurchaserInfo+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCPurchaserInfo+Protected.h"; path = "Purchases/ProtectedExtensions/RCPurchaserInfo+Protected.h"; sourceTree = "<group>"; };
+		67427849AEE43264D4F64CBCAED6915E /* RCIdentityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCIdentityManager.h; path = Purchases/Purchasing/RCIdentityManager.h; sourceTree = "<group>"; };
+		69C49351E43EE9FE7A932C3FCC0C3928 /* RCDeviceCache+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCDeviceCache+Protected.h"; path = "Purchases/ProtectedExtensions/RCDeviceCache+Protected.h"; sourceTree = "<group>"; };
+		6E2689EE18445FF7384E7373AFC589A4 /* RCDateProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCDateProvider.m; path = Purchases/Misc/RCDateProvider.m; sourceTree = "<group>"; };
+		6E92C9EE4CF219E24F8A3A9536E5EAF2 /* ProductsManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductsManager.swift; path = PurchasesCoreSwift/Purchasing/ProductsManager.swift; sourceTree = "<group>"; };
+		6FE2E828245B552334F9F54A18F829DF /* Pods-calm-mind-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-calm-mind-umbrella.h"; sourceTree = "<group>"; };
+		6FF1B6291AE7422ABC5C5D08DBD48512 /* RCHTTPRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCHTTPRequest.h; path = Purchases/Networking/RCHTTPRequest.h; sourceTree = "<group>"; };
+		70864B89729AF520A10C907EFF84CD09 /* RCPurchases+SubscriberAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RCPurchases+SubscriberAttributes.m"; path = "Purchases/SubscriberAttributes/RCPurchases+SubscriberAttributes.m"; sourceTree = "<group>"; };
+		7204ED0655F389582BA8E59DCB19190B /* RCReceiptFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCReceiptFetcher.m; path = Purchases/Purchasing/RCReceiptFetcher.m; sourceTree = "<group>"; };
+		72FFED19270862243CE1F39953F3676F /* RCPurchases.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCPurchases.m; path = Purchases/Public/RCPurchases.m; sourceTree = "<group>"; };
+		733D005D38DF2017B18A8D090CAAD63F /* Transaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transaction.swift; path = PurchasesCoreSwift/Transaction.swift; sourceTree = "<group>"; };
+		7394DB39CF5B2EB6009AEA6D3571E3F3 /* InAppPurchase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppPurchase.swift; path = PurchasesCoreSwift/LocalReceiptParsing/BasicTypes/InAppPurchase.swift; sourceTree = "<group>"; };
+		73DDE5281E0C43DD02C519D43263C1DE /* RCPurchases+SubscriberAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCPurchases+SubscriberAttributes.h"; path = "Purchases/SubscriberAttributes/RCPurchases+SubscriberAttributes.h"; sourceTree = "<group>"; };
+		749AF730CE213FF10A861F95A657834A /* RCPurchaserInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCPurchaserInfo.h; path = Purchases/Public/RCPurchaserInfo.h; sourceTree = "<group>"; };
+		760FB05E050EA4677F4B73AEBEFE612A /* RCISOPeriodFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCISOPeriodFormatter.h; path = Purchases/Misc/RCISOPeriodFormatter.h; sourceTree = "<group>"; };
+		76110519B9CDB08F38CA55FD52FCB360 /* NSLocale+RCExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLocale+RCExtensions.m"; path = "Purchases/FoundationExtensions/NSLocale+RCExtensions.m"; sourceTree = "<group>"; };
+		7B17777921009FC8182549288BF9C4D0 /* PurchasesCoreSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PurchasesCoreSwift-prefix.pch"; sourceTree = "<group>"; };
+		7B51404464C4EB6D4C594037AEB68841 /* PurchasesCoreSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PurchasesCoreSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BA90C035390215B55F083EF6C840543 /* RCOffering+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCOffering+Protected.h"; path = "Purchases/ProtectedExtensions/RCOffering+Protected.h"; sourceTree = "<group>"; };
+		7C7CDA4363CBEC03E06A56F9FD1A9E3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7C9001E70BF6D63816D9FCC170A48BE1 /* PurchasesCoreSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PurchasesCoreSwift.modulemap; sourceTree = "<group>"; };
+		7D24A9C1A350D099BD5A9BD42C74BDD2 /* RCEntitlementInfos+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCEntitlementInfos+Protected.h"; path = "Purchases/ProtectedExtensions/RCEntitlementInfos+Protected.h"; sourceTree = "<group>"; };
+		7D825FAC3BCB363EEB74F5ACF13B84E3 /* RCEntitlementInfos.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCEntitlementInfos.h; path = Purchases/Public/RCEntitlementInfos.h; sourceTree = "<group>"; };
+		839CA53622CA80F5B21F486CAD6D1520 /* NSDictionary+RCExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+RCExtensions.m"; path = "Purchases/FoundationExtensions/NSDictionary+RCExtensions.m"; sourceTree = "<group>"; };
+		85B6AD8CB509157DE4DA8C3DAEF15D29 /* OperationDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperationDispatcher.swift; path = PurchasesCoreSwift/Misc/OperationDispatcher.swift; sourceTree = "<group>"; };
+		87CCC165573958BD15E27C44DA71C49B /* RCPackage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCPackage.m; path = Purchases/Public/RCPackage.m; sourceTree = "<group>"; };
+		8B1EC43D035484A9B9F6B0010A518907 /* PurchasesCoreSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PurchasesCoreSwift.debug.xcconfig; sourceTree = "<group>"; };
+		8F7859E2965542F60D5B0B70D58A5095 /* NSLocale+RCExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLocale+RCExtensions.h"; path = "Purchases/FoundationExtensions/NSLocale+RCExtensions.h"; sourceTree = "<group>"; };
+		9054DA2B11B1187DE2C99A18ACBB9C3B /* RCPurchasesErrorUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCPurchasesErrorUtils.h; path = Purchases/Public/RCPurchasesErrorUtils.h; sourceTree = "<group>"; };
+		91E49EB50DABB9B321C38F5BBB45B2D9 /* RCStoreKitWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCStoreKitWrapper.m; path = Purchases/Purchasing/RCStoreKitWrapper.m; sourceTree = "<group>"; };
+		952EB5DDF4708544AD1FDE79482C3E20 /* RCOfferings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCOfferings.m; path = Purchases/Public/RCOfferings.m; sourceTree = "<group>"; };
+		95B6AE2B327C0B11B31D442A6F01B496 /* RCAttributionFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCAttributionFetcher.m; path = Purchases/Purchasing/RCAttributionFetcher.m; sourceTree = "<group>"; };
+		98B6790723217DCAF7A28EEE80C662B9 /* RCIntroEligibility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCIntroEligibility.m; path = Purchases/Public/RCIntroEligibility.m; sourceTree = "<group>"; };
+		9CBF4ED12EB9A25365F994D55ACCDBE1 /* RCEntitlementInfos.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCEntitlementInfos.m; path = Purchases/Public/RCEntitlementInfos.m; sourceTree = "<group>"; };
+		9D2E720DEC9EC21251E5887717D984CC /* Purchases-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Purchases-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EEBD93F0C41F78359E23EDA302F2154 /* RCAttributionNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCAttributionNetwork.h; path = Purchases/Public/RCAttributionNetwork.h; sourceTree = "<group>"; };
+		9FE91D88F08BC0028FF70FFC1BD6CE5C /* RCOfferings+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCOfferings+Protected.h"; path = "Purchases/ProtectedExtensions/RCOfferings+Protected.h"; sourceTree = "<group>"; };
+		A04AAA9428B695A2E42579BCE1DE6BEE /* RCDeviceCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCDeviceCache.m; path = Purchases/Caching/RCDeviceCache.m; sourceTree = "<group>"; };
+		A053C4FCA4F5CF5F08EBCB564E90B5B9 /* UInt8+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt8+Extensions.swift"; path = "PurchasesCoreSwift/LocalReceiptParsing/DataConverters/UInt8+Extensions.swift"; sourceTree = "<group>"; };
+		A45955A573A5BED016455CF3CE612B77 /* Pods-calm-mind-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-calm-mind-dummy.m"; sourceTree = "<group>"; };
+		A777D9939AFEC140F0C60BDBFD6A8DD2 /* Pods-calm-mind-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-calm-mind-Info.plist"; sourceTree = "<group>"; };
+		A80A02A31E5CED7391D8CF2F296DF889 /* RCPurchasesErrorUtils+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCPurchasesErrorUtils+Protected.h"; path = "Purchases/ProtectedExtensions/RCPurchasesErrorUtils+Protected.h"; sourceTree = "<group>"; };
+		A8744BFCBA0EFF3EFCB22EF6E0408B42 /* PurchasesCoreSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PurchasesCoreSwift.framework; path = PurchasesCoreSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA8436C1F141D89154A722EFDE05DB35 /* RCInMemoryCachedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCInMemoryCachedObject.m; path = Purchases/Caching/RCInMemoryCachedObject.m; sourceTree = "<group>"; };
+		AF25A9E7FA44BFD4EC6B13767F8FFACD /* IntroEligibilityCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntroEligibilityCalculator.swift; path = PurchasesCoreSwift/IntroEligibilityCalculator.swift; sourceTree = "<group>"; };
+		B042D1EB2F66D7986DAAAAA359896E1B /* RCOfferingsFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCOfferingsFactory.m; path = Purchases/Purchasing/RCOfferingsFactory.m; sourceTree = "<group>"; };
+		B0A6A761A1022A586416C5D2FFD784FC /* RCBackend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCBackend.h; path = Purchases/Networking/RCBackend.h; sourceTree = "<group>"; };
+		B0B29788AB1EA25837D8E3DB2B49FC65 /* RCOffering.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCOffering.h; path = Purchases/Public/RCOffering.h; sourceTree = "<group>"; };
+		B18B516B38CB919E56F69CEB9F1FFAFA /* RCPackage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCPackage.h; path = Purchases/Public/RCPackage.h; sourceTree = "<group>"; };
+		B21B0F45421CC76D06121EF87F55332F /* RCAttributionData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCAttributionData.h; path = Purchases/Purchasing/RCAttributionData.h; sourceTree = "<group>"; };
+		B4C794EE6592B00A40C018046C38A5B8 /* ASN1ContainerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASN1ContainerBuilder.swift; path = PurchasesCoreSwift/LocalReceiptParsing/Builders/ASN1ContainerBuilder.swift; sourceTree = "<group>"; };
+		B58117D414ADAA84452F2B1CD9F93301 /* PurchasesCoreSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PurchasesCoreSwift-Info.plist"; sourceTree = "<group>"; };
+		BE1000410AABAC8444B7B26CD6F6BDB0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		BE502930B1B7329B22A0DAB16E98C667 /* RCIntroEligibility+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCIntroEligibility+Protected.h"; path = "Purchases/ProtectedExtensions/RCIntroEligibility+Protected.h"; sourceTree = "<group>"; };
+		BE9841AA391181AB8B3B92CA23E2C671 /* RCSystemInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCSystemInfo.h; path = Purchases/Misc/RCSystemInfo.h; sourceTree = "<group>"; };
+		C161B11FD1D750BD5A9D74A48BC8282A /* NSData+RCExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+RCExtensions.h"; path = "Purchases/FoundationExtensions/NSData+RCExtensions.h"; sourceTree = "<group>"; };
+		C2614685CA876F5AA972FB72A0DBCED5 /* RCISOPeriodFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCISOPeriodFormatter.m; path = Purchases/Misc/RCISOPeriodFormatter.m; sourceTree = "<group>"; };
+		C2B686595E51771F6F825E2789FFD5AE /* PurchasesCoreSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PurchasesCoreSwift.release.xcconfig; sourceTree = "<group>"; };
+		C36A53CB66891C484755C46C4C3E046E /* RCReceiptFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCReceiptFetcher.h; path = Purchases/Purchasing/RCReceiptFetcher.h; sourceTree = "<group>"; };
+		C39202D54CEED9CDE54EF82F0FAB78B9 /* ASN1ObjectIdentifierBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASN1ObjectIdentifierBuilder.swift; path = PurchasesCoreSwift/LocalReceiptParsing/Builders/ASN1ObjectIdentifierBuilder.swift; sourceTree = "<group>"; };
+		C526273982E86AFBDBBDA8697EF8467E /* ISO3601DateFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO3601DateFormatter.swift; path = PurchasesCoreSwift/LocalReceiptParsing/DataConverters/ISO3601DateFormatter.swift; sourceTree = "<group>"; };
+		C748A76A4F0C79AEE1C5F9612D2A9956 /* RCSubscriberAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCSubscriberAttribute.m; path = Purchases/SubscriberAttributes/RCSubscriberAttribute.m; sourceTree = "<group>"; };
+		C838FD0A18FE48AE8D1237C6A8F24FCB /* InAppPurchaseBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppPurchaseBuilder.swift; path = PurchasesCoreSwift/LocalReceiptParsing/Builders/InAppPurchaseBuilder.swift; sourceTree = "<group>"; };
+		CA4D6144AACAA1226E6154C42A96C851 /* RCEntitlementInfo+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCEntitlementInfo+Protected.h"; path = "Purchases/ProtectedExtensions/RCEntitlementInfo+Protected.h"; sourceTree = "<group>"; };
+		CAE433AB2A04ACCE7835951FBDCADCE3 /* RCProductInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCProductInfo.h; path = Purchases/Purchasing/RCProductInfo.h; sourceTree = "<group>"; };
+		CCEE8055B624818B24F36BE8DC4CFCD1 /* RCInMemoryCachedObject+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCInMemoryCachedObject+Protected.h"; path = "Purchases/ProtectedExtensions/RCInMemoryCachedObject+Protected.h"; sourceTree = "<group>"; };
+		D2E9326261BC43C2E3CA956EC92ACC41 /* RCIdentityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCIdentityManager.m; path = Purchases/Purchasing/RCIdentityManager.m; sourceTree = "<group>"; };
+		D3123EB27C9638F33576412BF2CDE500 /* ReceiptParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReceiptParser.swift; path = PurchasesCoreSwift/LocalReceiptParsing/ReceiptParser.swift; sourceTree = "<group>"; };
+		D6818D2A4E2018FE4C31FCA0C8E233E4 /* RCProductInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCProductInfo.m; path = Purchases/Purchasing/RCProductInfo.m; sourceTree = "<group>"; };
+		D72540A38557949101A58492389AA57F /* RCSubscriberAttribute+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCSubscriberAttribute+Protected.h"; path = "Purchases/ProtectedExtensions/RCSubscriberAttribute+Protected.h"; sourceTree = "<group>"; };
+		D9CF792C28585574974AD4308217108D /* RCOfferingsFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCOfferingsFactory.h; path = Purchases/Purchasing/RCOfferingsFactory.h; sourceTree = "<group>"; };
+		DAACD9EE505D16DAD65EF789D1AA40C9 /* NSDate+RCExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+RCExtensions.h"; path = "Purchases/FoundationExtensions/NSDate+RCExtensions.h"; sourceTree = "<group>"; };
+		DB17BA34F6E64BA30BEE9C759507FBCC /* RCStoreKitRequestFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCStoreKitRequestFetcher.m; path = Purchases/Purchasing/RCStoreKitRequestFetcher.m; sourceTree = "<group>"; };
+		DF77AFF86606093AF1F7E11773246218 /* AppleReceipt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppleReceipt.swift; path = PurchasesCoreSwift/LocalReceiptParsing/BasicTypes/AppleReceipt.swift; sourceTree = "<group>"; };
+		DF9A37949EF51C553DFF415DCA9825B4 /* ASN1Container.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASN1Container.swift; path = PurchasesCoreSwift/LocalReceiptParsing/BasicTypes/ASN1Container.swift; sourceTree = "<group>"; };
+		E0CE1B20D4C076BC50BE5B23DE3A7B77 /* NSData+RCExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+RCExtensions.m"; path = "Purchases/FoundationExtensions/NSData+RCExtensions.m"; sourceTree = "<group>"; };
+		E3758240AA9C1AB477C1A5A3379A7AEE /* Pods_calm_mind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_calm_mind.framework; path = "Pods-calm-mind.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41B8D9D4F09B258105451FD3FB87222 /* RCPromotionalOffer+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCPromotionalOffer+Protected.h"; path = "Purchases/ProtectedExtensions/RCPromotionalOffer+Protected.h"; sourceTree = "<group>"; };
+		E426521AD968BA19443CC3EA3AD72A71 /* ArraySlice_UInt8+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ArraySlice_UInt8+Extensions.swift"; path = "PurchasesCoreSwift/LocalReceiptParsing/DataConverters/ArraySlice_UInt8+Extensions.swift"; sourceTree = "<group>"; };
+		E8CB868C95DABC416B724CAAF864465D /* RCInMemoryCachedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCInMemoryCachedObject.h; path = Purchases/Caching/RCInMemoryCachedObject.h; sourceTree = "<group>"; };
+		E8DBF669839138836F3A0C6FCFF2229C /* RCSystemInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCSystemInfo.m; path = Purchases/Misc/RCSystemInfo.m; sourceTree = "<group>"; };
+		E8FE76D998DEF8D11647FFB144B011C7 /* Pods-calm-mind.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-calm-mind.modulemap"; sourceTree = "<group>"; };
+		ECA69D894E55BFBF0FBEEBC436DA94D6 /* RCStoreKitWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCStoreKitWrapper.h; path = Purchases/Purchasing/RCStoreKitWrapper.h; sourceTree = "<group>"; };
+		ECBAC03BAC58431A9F190F96A904049C /* NSError+RCExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+RCExtensions.h"; path = "Purchases/FoundationExtensions/NSError+RCExtensions.h"; sourceTree = "<group>"; };
+		F0BADA16264EF9114E22FCBD946C1C56 /* RCCrossPlatformSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCCrossPlatformSupport.h; path = Purchases/Misc/RCCrossPlatformSupport.h; sourceTree = "<group>"; };
+		F376F8D502696D1F0A3B8D939C5B9F9F /* RCEntitlementInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCEntitlementInfo.h; path = Purchases/Public/RCEntitlementInfo.h; sourceTree = "<group>"; };
+		F3BEB273020E4FA1D6AF1263EA04AD3E /* RCPackage+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCPackage+Protected.h"; path = "Purchases/ProtectedExtensions/RCPackage+Protected.h"; sourceTree = "<group>"; };
+		F7A588C75347128A4E82225E568D4F1D /* Purchases.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Purchases.modulemap; sourceTree = "<group>"; };
+		F9E9965A8AB4C947148376228F54644A /* AppleReceiptBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppleReceiptBuilder.swift; path = PurchasesCoreSwift/LocalReceiptParsing/Builders/AppleReceiptBuilder.swift; sourceTree = "<group>"; };
+		FA39B7E1B1F6EA2534C96EAC11EC5714 /* RCSubscriberAttributesManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCSubscriberAttributesManager.m; path = Purchases/SubscriberAttributes/RCSubscriberAttributesManager.m; sourceTree = "<group>"; };
+		FBA7F9EF3FAEB0BC7D79BB1AFF265A06 /* Purchases.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Purchases.framework; path = Purchases.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC67BC7F7282D8655B55A4F3481A21A0 /* AttributionStrings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttributionStrings.swift; path = PurchasesCoreSwift/Logging/Strings/AttributionStrings.swift; sourceTree = "<group>"; };
+		FD26BBAE872A26DB38C2EAE001F5E5CE /* Purchases.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Purchases.h; path = Purchases/Public/Purchases.h; sourceTree = "<group>"; };
+		FD4CC8CD46EB75E1D83BB0B9297466E9 /* Pods-calm-mind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-calm-mind.debug.xcconfig"; sourceTree = "<group>"; };
+		FEC0E4283339CE2ED89CD95A9D51AA22 /* RCEntitlementInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCEntitlementInfo.m; path = Purchases/Public/RCEntitlementInfo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B7BC0C8B05C89E642A2962B832A599B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2737E46BE7534441D3F4C9109F319A09 /* Foundation.framework in Frameworks */,
+				B9E2CE14F784493FB6B5AB8B6CD2749D /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2A589D03A024565296CDCE4F55F3F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				996F33FFFE67324A69AA5CBCA761D014 /* Foundation.framework in Frameworks */,
+				5B10E365017D8E54A7172155139E7E32 /* PurchasesCoreSwift.framework in Frameworks */,
+				8217E352CAAE9AD355D9CD76EF76C822 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7F3A9A3038508C13C10CF9EC20EF1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C024F901878341E0D74C3B796FBD5506 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AF13BB7E34A4E57530CA3208B5A9F98 /* Purchases */ = {
+			isa = PBXGroup;
+			children = (
+				C161B11FD1D750BD5A9D74A48BC8282A /* NSData+RCExtensions.h */,
+				E0CE1B20D4C076BC50BE5B23DE3A7B77 /* NSData+RCExtensions.m */,
+				DAACD9EE505D16DAD65EF789D1AA40C9 /* NSDate+RCExtensions.h */,
+				122CCD37D70A959FD7C6ADC4BF3E7C75 /* NSDate+RCExtensions.m */,
+				4A80CF445038C04D5ED8C595DEE245F1 /* NSDictionary+RCExtensions.h */,
+				839CA53622CA80F5B21F486CAD6D1520 /* NSDictionary+RCExtensions.m */,
+				ECBAC03BAC58431A9F190F96A904049C /* NSError+RCExtensions.h */,
+				125FD6C3511778DCDC980EA15CB92ED0 /* NSError+RCExtensions.m */,
+				8F7859E2965542F60D5B0B70D58A5095 /* NSLocale+RCExtensions.h */,
+				76110519B9CDB08F38CA55FD52FCB360 /* NSLocale+RCExtensions.m */,
+				FD26BBAE872A26DB38C2EAE001F5E5CE /* Purchases.h */,
+				B21B0F45421CC76D06121EF87F55332F /* RCAttributionData.h */,
+				46B5707CBAA2A5605C84CEE0093F7FD1 /* RCAttributionData.m */,
+				1D4AC0716265C371E1211F1ACB431E80 /* RCAttributionFetcher.h */,
+				95B6AE2B327C0B11B31D442A6F01B496 /* RCAttributionFetcher.m */,
+				16B2C3EDE5B57E2CCE12B391F729E549 /* RCAttributionFetcher+Protected.h */,
+				9EEBD93F0C41F78359E23EDA302F2154 /* RCAttributionNetwork.h */,
+				B0A6A761A1022A586416C5D2FFD784FC /* RCBackend.h */,
+				10EB77477F1E2D60E0239CEDCCE32C8B /* RCBackend.m */,
+				F0BADA16264EF9114E22FCBD946C1C56 /* RCCrossPlatformSupport.h */,
+				124A50234EBFD5715CFC628684457F8B /* RCDateProvider.h */,
+				6E2689EE18445FF7384E7373AFC589A4 /* RCDateProvider.m */,
+				4D4A311AEAB4058B2CEAD160E98CFD01 /* RCDeviceCache.h */,
+				A04AAA9428B695A2E42579BCE1DE6BEE /* RCDeviceCache.m */,
+				69C49351E43EE9FE7A932C3FCC0C3928 /* RCDeviceCache+Protected.h */,
+				F376F8D502696D1F0A3B8D939C5B9F9F /* RCEntitlementInfo.h */,
+				FEC0E4283339CE2ED89CD95A9D51AA22 /* RCEntitlementInfo.m */,
+				CA4D6144AACAA1226E6154C42A96C851 /* RCEntitlementInfo+Protected.h */,
+				7D825FAC3BCB363EEB74F5ACF13B84E3 /* RCEntitlementInfos.h */,
+				9CBF4ED12EB9A25365F994D55ACCDBE1 /* RCEntitlementInfos.m */,
+				7D24A9C1A350D099BD5A9BD42C74BDD2 /* RCEntitlementInfos+Protected.h */,
+				1B1FDCE4ED0ECB32004BBEE12BA098D8 /* RCHTTPClient.h */,
+				042476F9492D1C094E5130F52DF6E78E /* RCHTTPClient.m */,
+				6FF1B6291AE7422ABC5C5D08DBD48512 /* RCHTTPRequest.h */,
+				361B923A02B326398D77965EF3B3EB82 /* RCHTTPRequest.m */,
+				11890ACA10FC7E794DB73A8CBBB8BF12 /* RCHTTPStatusCodes.h */,
+				67427849AEE43264D4F64CBCAED6915E /* RCIdentityManager.h */,
+				D2E9326261BC43C2E3CA956EC92ACC41 /* RCIdentityManager.m */,
+				E8CB868C95DABC416B724CAAF864465D /* RCInMemoryCachedObject.h */,
+				AA8436C1F141D89154A722EFDE05DB35 /* RCInMemoryCachedObject.m */,
+				CCEE8055B624818B24F36BE8DC4CFCD1 /* RCInMemoryCachedObject+Protected.h */,
+				49C559C85BE98795A63EB9D2B8645817 /* RCIntroEligibility.h */,
+				98B6790723217DCAF7A28EEE80C662B9 /* RCIntroEligibility.m */,
+				BE502930B1B7329B22A0DAB16E98C667 /* RCIntroEligibility+Protected.h */,
+				760FB05E050EA4677F4B73AEBEFE612A /* RCISOPeriodFormatter.h */,
+				C2614685CA876F5AA972FB72A0DBCED5 /* RCISOPeriodFormatter.m */,
+				515BF29A3F0AE7785CF4EA4FEEA058ED /* RCLogUtils.h */,
+				0CF5FCF84BA66FA266578CD949C6269F /* RCLogUtils.m */,
+				B0B29788AB1EA25837D8E3DB2B49FC65 /* RCOffering.h */,
+				555CB795614C8C1A21512571D4DDE054 /* RCOffering.m */,
+				7BA90C035390215B55F083EF6C840543 /* RCOffering+Protected.h */,
+				48DEB902CA1616E7B8C596DBF11E97D5 /* RCOfferings.h */,
+				952EB5DDF4708544AD1FDE79482C3E20 /* RCOfferings.m */,
+				9FE91D88F08BC0028FF70FFC1BD6CE5C /* RCOfferings+Protected.h */,
+				D9CF792C28585574974AD4308217108D /* RCOfferingsFactory.h */,
+				B042D1EB2F66D7986DAAAAA359896E1B /* RCOfferingsFactory.m */,
+				B18B516B38CB919E56F69CEB9F1FFAFA /* RCPackage.h */,
+				87CCC165573958BD15E27C44DA71C49B /* RCPackage.m */,
+				F3BEB273020E4FA1D6AF1263EA04AD3E /* RCPackage+Protected.h */,
+				CAE433AB2A04ACCE7835951FBDCADCE3 /* RCProductInfo.h */,
+				D6818D2A4E2018FE4C31FCA0C8E233E4 /* RCProductInfo.m */,
+				30A05696E1D0ABCC40278056A9956AE2 /* RCProductInfoExtractor.h */,
+				3DDD384F0BD68E4D4E763AD49D4EF280 /* RCProductInfoExtractor.m */,
+				37CD2284ED39FF6B6DFA67238C16131A /* RCPromotionalOffer.h */,
+				05594E329B395E495E76774FF3069B1D /* RCPromotionalOffer.m */,
+				E41B8D9D4F09B258105451FD3FB87222 /* RCPromotionalOffer+Protected.h */,
+				749AF730CE213FF10A861F95A657834A /* RCPurchaserInfo.h */,
+				416018C6B3F7A403074FD293FF0C4BB8 /* RCPurchaserInfo.m */,
+				659E996DFDE3DFC83E7D74C6093663AA /* RCPurchaserInfo+Protected.h */,
+				582BC2C0929CBBDDFE1248F40DA3C6C6 /* RCPurchases.h */,
+				72FFED19270862243CE1F39953F3676F /* RCPurchases.m */,
+				52A83F1E964B29B798FF233551EBD489 /* RCPurchases+Protected.h */,
+				73DDE5281E0C43DD02C519D43263C1DE /* RCPurchases+SubscriberAttributes.h */,
+				70864B89729AF520A10C907EFF84CD09 /* RCPurchases+SubscriberAttributes.m */,
+				1F4B2817C5F791D0FE79EC98CF2127EC /* RCPurchasesErrors.h */,
+				9054DA2B11B1187DE2C99A18ACBB9C3B /* RCPurchasesErrorUtils.h */,
+				0C0E1A6A563103DDE5AB8D0F7534FFEE /* RCPurchasesErrorUtils.m */,
+				A80A02A31E5CED7391D8CF2F296DF889 /* RCPurchasesErrorUtils+Protected.h */,
+				C36A53CB66891C484755C46C4C3E046E /* RCReceiptFetcher.h */,
+				7204ED0655F389582BA8E59DCB19190B /* RCReceiptFetcher.m */,
+				63FDA277300CB36F21E910CC7B4B8133 /* RCReceiptRefreshPolicy.h */,
+				333E0056461D64D02DCD2CD8743B88F5 /* RCSpecialSubscriberAttributes.h */,
+				37AA770232C5D89C4BDFAEF9E0DD924C /* RCStoreKitRequestFetcher.h */,
+				DB17BA34F6E64BA30BEE9C759507FBCC /* RCStoreKitRequestFetcher.m */,
+				ECA69D894E55BFBF0FBEEBC436DA94D6 /* RCStoreKitWrapper.h */,
+				91E49EB50DABB9B321C38F5BBB45B2D9 /* RCStoreKitWrapper.m */,
+				555B5AD5FE59DDC25B8D9392E2C447C9 /* RCSubscriberAttribute.h */,
+				C748A76A4F0C79AEE1C5F9612D2A9956 /* RCSubscriberAttribute.m */,
+				D72540A38557949101A58492389AA57F /* RCSubscriberAttribute+Protected.h */,
+				5FA1F6A03FF84FEA75AAC5660A33A499 /* RCSubscriberAttributesManager.h */,
+				FA39B7E1B1F6EA2534C96EAC11EC5714 /* RCSubscriberAttributesManager.m */,
+				BE9841AA391181AB8B3B92CA23E2C671 /* RCSystemInfo.h */,
+				E8DBF669839138836F3A0C6FCFF2229C /* RCSystemInfo.m */,
+				4C2A429ECB9957E19C8CCE61939287BB /* RCTransaction.h */,
+				9306B6970893A583397278C12F6425F1 /* Support Files */,
+			);
+			name = Purchases;
+			path = Purchases;
+			sourceTree = "<group>";
+		};
+		615502CC4B88CFAE6D4E77F46BCC2F18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B51404464C4EB6D4C594037AEB68841 /* PurchasesCoreSwift.framework */,
+				DE86B01FC114C3FA41B4914EBC7CC7E1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70F5EE37CF01DC8BEF961DE92F8D6590 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C9001E70BF6D63816D9FCC170A48BE1 /* PurchasesCoreSwift.modulemap */,
+				56D899CB8D73C3CFBC5EA0C6294891A2 /* PurchasesCoreSwift-dummy.m */,
+				B58117D414ADAA84452F2B1CD9F93301 /* PurchasesCoreSwift-Info.plist */,
+				7B17777921009FC8182549288BF9C4D0 /* PurchasesCoreSwift-prefix.pch */,
+				0E485310A76B571F082279DB13567531 /* PurchasesCoreSwift-umbrella.h */,
+				8B1EC43D035484A9B9F6B0010A518907 /* PurchasesCoreSwift.debug.xcconfig */,
+				C2B686595E51771F6F825E2789FFD5AE /* PurchasesCoreSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PurchasesCoreSwift";
+			sourceTree = "<group>";
+		};
+		742C4C8CBEE50796731D626B8731E034 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AF13BB7E34A4E57530CA3208B5A9F98 /* Purchases */,
+				EB8B193620C9C494F714B9F248AE9423 /* PurchasesCoreSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		82972E33A40B4C522213A835C0E49947 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3758240AA9C1AB477C1A5A3379A7AEE /* Pods_calm_mind.framework */,
+				FBA7F9EF3FAEB0BC7D79BB1AFF265A06 /* Purchases.framework */,
+				A8744BFCBA0EFF3EFCB22EF6E0408B42 /* PurchasesCoreSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90F4948415D08ADEF27A57E7F05A9A46 /* Pods-calm-mind */ = {
+			isa = PBXGroup;
+			children = (
+				E8FE76D998DEF8D11647FFB144B011C7 /* Pods-calm-mind.modulemap */,
+				43EA8BB6508F44B39158007B6FBEEAE8 /* Pods-calm-mind-acknowledgements.markdown */,
+				5153D49110BC9C6B6321BF255DDDFD03 /* Pods-calm-mind-acknowledgements.plist */,
+				A45955A573A5BED016455CF3CE612B77 /* Pods-calm-mind-dummy.m */,
+				4DC908152C7FF585FD72F10305133610 /* Pods-calm-mind-frameworks.sh */,
+				A777D9939AFEC140F0C60BDBFD6A8DD2 /* Pods-calm-mind-Info.plist */,
+				6FE2E828245B552334F9F54A18F829DF /* Pods-calm-mind-umbrella.h */,
+				FD4CC8CD46EB75E1D83BB0B9297466E9 /* Pods-calm-mind.debug.xcconfig */,
+				5EB42D7C1DE3D1C019814488DC99F2D0 /* Pods-calm-mind.release.xcconfig */,
+			);
+			name = "Pods-calm-mind";
+			path = "Target Support Files/Pods-calm-mind";
+			sourceTree = "<group>";
+		};
+		9306B6970893A583397278C12F6425F1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7A588C75347128A4E82225E568D4F1D /* Purchases.modulemap */,
+				51A1650DA24673A3A9727E0513CD4D89 /* Purchases-dummy.m */,
+				5A1F7866BEEF2AF2C8D2A88FD7944481 /* Purchases-Info.plist */,
+				9D2E720DEC9EC21251E5887717D984CC /* Purchases-prefix.pch */,
+				0D0B09DAC8910E8F46B124066C156A0B /* Purchases-umbrella.h */,
+				173403D9233DC83DD4A2D8EEED0880BF /* Purchases.debug.xcconfig */,
+				087225F362E5FB6A81CC8F5C4BFD86A2 /* Purchases.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Purchases";
+			sourceTree = "<group>";
+		};
+		AFB35A79D1046D67324B5CFACB45E896 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				90F4948415D08ADEF27A57E7F05A9A46 /* Pods-calm-mind */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				615502CC4B88CFAE6D4E77F46BCC2F18 /* Frameworks */,
+				742C4C8CBEE50796731D626B8731E034 /* Pods */,
+				82972E33A40B4C522213A835C0E49947 /* Products */,
+				AFB35A79D1046D67324B5CFACB45E896 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DE86B01FC114C3FA41B4914EBC7CC7E1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7C7CDA4363CBEC03E06A56F9FD1A9E3A /* Foundation.framework */,
+				BE1000410AABAC8444B7B26CD6F6BDB0 /* StoreKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EB8B193620C9C494F714B9F248AE9423 /* PurchasesCoreSwift */ = {
+			isa = PBXGroup;
+			children = (
+				DF77AFF86606093AF1F7E11773246218 /* AppleReceipt.swift */,
+				F9E9965A8AB4C947148376228F54644A /* AppleReceiptBuilder.swift */,
+				E426521AD968BA19443CC3EA3AD72A71 /* ArraySlice_UInt8+Extensions.swift */,
+				DF9A37949EF51C553DFF415DCA9825B4 /* ASN1Container.swift */,
+				B4C794EE6592B00A40C018046C38A5B8 /* ASN1ContainerBuilder.swift */,
+				311EDFA3232595897C0F1D363AD5A96B /* ASN1ObjectIdentifier.swift */,
+				C39202D54CEED9CDE54EF82F0FAB78B9 /* ASN1ObjectIdentifierBuilder.swift */,
+				FC67BC7F7282D8655B55A4F3481A21A0 /* AttributionStrings.swift */,
+				58EFCD12F97032C865F401FE49D18175 /* DateExtensions.swift */,
+				7394DB39CF5B2EB6009AEA6D3571E3F3 /* InAppPurchase.swift */,
+				C838FD0A18FE48AE8D1237C6A8F24FCB /* InAppPurchaseBuilder.swift */,
+				AF25A9E7FA44BFD4EC6B13767F8FFACD /* IntroEligibilityCalculator.swift */,
+				C526273982E86AFBDBBDA8697EF8467E /* ISO3601DateFormatter.swift */,
+				85B6AD8CB509157DE4DA8C3DAEF15D29 /* OperationDispatcher.swift */,
+				6E92C9EE4CF219E24F8A3A9536E5EAF2 /* ProductsManager.swift */,
+				644D1F4D40113420225A5F981BB1D8D7 /* ProductsRequestFactory.swift */,
+				D3123EB27C9638F33576412BF2CDE500 /* ReceiptParser.swift */,
+				428F420B70D82F82760CC4B95DF17CAD /* ReceiptParsingError.swift */,
+				2E6D36D415ED94FECA27A8C1123507DB /* Strings.swift */,
+				733D005D38DF2017B18A8D090CAAD63F /* Transaction.swift */,
+				114910BCF10B7F8073A5D6E9A0393223 /* TransactionsFactory.swift */,
+				A053C4FCA4F5CF5F08EBCB564E90B5B9 /* UInt8+Extensions.swift */,
+				70F5EE37CF01DC8BEF961DE92F8D6590 /* Support Files */,
+			);
+			name = PurchasesCoreSwift;
+			path = PurchasesCoreSwift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1AED479331F3D8A47E125AA4C3E4190E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D787FBC2622A66C158F64C52978BCF1 /* PurchasesCoreSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB571A87174D9CA3CD4570E8B01F0129 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DFCA7264A1CEC49E99113565F04EA84 /* NSData+RCExtensions.h in Headers */,
+				ED29727A66C6064B17613A2153B1C450 /* NSDate+RCExtensions.h in Headers */,
+				270AD49631F9FFECB3141C060983A2B9 /* NSDictionary+RCExtensions.h in Headers */,
+				14B1925DABCB3E22E64078867A9341AD /* NSError+RCExtensions.h in Headers */,
+				6750743F1C6783FAC8E4161CD57F315B /* NSLocale+RCExtensions.h in Headers */,
+				F1134D60B6B50216BD1D284AF30F8F61 /* Purchases-umbrella.h in Headers */,
+				C5D14153A9A27A52EF745D23AC05A224 /* Purchases.h in Headers */,
+				DE93F9CB669648DDD8A707EB79ACE95B /* RCAttributionData.h in Headers */,
+				A678028AF0BFEE6861252AC39F94513B /* RCAttributionFetcher+Protected.h in Headers */,
+				B0BE61DE96E7DEAA2C0E205A9405373E /* RCAttributionFetcher.h in Headers */,
+				452BE9C5120CA543ECE0313F9C6FDFEE /* RCAttributionNetwork.h in Headers */,
+				0653BAEADF463B2AA3DDCFA7FA45FBD0 /* RCBackend.h in Headers */,
+				E04092BB9BC901014BB66DF9EC50F2DF /* RCCrossPlatformSupport.h in Headers */,
+				1F8426DB406567E4CDAC3B8AC97458B5 /* RCDateProvider.h in Headers */,
+				C1FEDDC5A620BD30471F5021411AB54F /* RCDeviceCache+Protected.h in Headers */,
+				13CAA41D53F756C71703E697A65CD165 /* RCDeviceCache.h in Headers */,
+				4278DE079796BE3122519B09535A85BD /* RCEntitlementInfo+Protected.h in Headers */,
+				5CEDA03C5DAFC9D0975D9CF6562087A0 /* RCEntitlementInfo.h in Headers */,
+				428F24D52D4333BF9D4E70CC310900A7 /* RCEntitlementInfos+Protected.h in Headers */,
+				3E2C1D4612C2DA8886CEF2FA4903AE93 /* RCEntitlementInfos.h in Headers */,
+				46F3AE65F1B549D5F211B2459AD5E549 /* RCHTTPClient.h in Headers */,
+				40C895B65A73DE0B1DD2568196255B52 /* RCHTTPRequest.h in Headers */,
+				B0B995B8CA9C6C5574AF99B67A35A661 /* RCHTTPStatusCodes.h in Headers */,
+				E184D53C48FE168C9977624473676A1E /* RCIdentityManager.h in Headers */,
+				37E05321FF1723AC6DFBFEC30D8BDE67 /* RCInMemoryCachedObject+Protected.h in Headers */,
+				CD7EF1412B7FC27E8F43588291EC1A03 /* RCInMemoryCachedObject.h in Headers */,
+				1D4EDC4A4AE28D148570C0C47860E193 /* RCIntroEligibility+Protected.h in Headers */,
+				298207D63E4FE3C8A5AFDCE6FFAB967A /* RCIntroEligibility.h in Headers */,
+				CFC6D608887CDC187FFCD82C17BF6C98 /* RCISOPeriodFormatter.h in Headers */,
+				64AF544E5B5329574EF5037E46D5C7FA /* RCLogUtils.h in Headers */,
+				C32AE550265BE3734DE37379C92AB172 /* RCOffering+Protected.h in Headers */,
+				0EA5CA5E695DD29759048E3050557004 /* RCOffering.h in Headers */,
+				5AFB6B9138598A7ABC3BAF9A2A4903BB /* RCOfferings+Protected.h in Headers */,
+				40C86BE73AC9784C373B522E45C6FE8B /* RCOfferings.h in Headers */,
+				0D0879E27EC40A0C11E5BAA90DDE4057 /* RCOfferingsFactory.h in Headers */,
+				9966D70E0E9E00D82605AD97F4086716 /* RCPackage+Protected.h in Headers */,
+				052E739017171D657D8E2692CCA20E04 /* RCPackage.h in Headers */,
+				6C570D0F32E71D4AFBC834293A683169 /* RCProductInfo.h in Headers */,
+				D99983BF93297FA586A0171683CCB407 /* RCProductInfoExtractor.h in Headers */,
+				EFD468C47E81A1D3E9EE03F907EC724B /* RCPromotionalOffer+Protected.h in Headers */,
+				BC3809E415A4C1CF361130ACB7F3C145 /* RCPromotionalOffer.h in Headers */,
+				C5A1ACFBBDC55643594562B2DBB98273 /* RCPurchaserInfo+Protected.h in Headers */,
+				FCF3A8A035E869F33B56468E097C3FED /* RCPurchaserInfo.h in Headers */,
+				5F3FC37844F858D7EF4AB3E61576140B /* RCPurchases+Protected.h in Headers */,
+				733B1A205CCD9F93D4D6A2930E912D97 /* RCPurchases+SubscriberAttributes.h in Headers */,
+				45AA3B9447875657972E31005E2A227C /* RCPurchases.h in Headers */,
+				25CEF2FAC4E39E0E65417CE47C827E20 /* RCPurchasesErrors.h in Headers */,
+				C11E0DAB9E71DA372242FB956E9AC209 /* RCPurchasesErrorUtils+Protected.h in Headers */,
+				C23235DB8FFB65AB7662D13B07F1B016 /* RCPurchasesErrorUtils.h in Headers */,
+				0D93143BB57C99571484EB3E85AB46AF /* RCReceiptFetcher.h in Headers */,
+				88EA2ED684283EB2D9B350748CC1BA74 /* RCReceiptRefreshPolicy.h in Headers */,
+				8451B2FD631DCD15286F36DB5C964B0A /* RCSpecialSubscriberAttributes.h in Headers */,
+				33B863578764A476F05F49FBA686F7A6 /* RCStoreKitRequestFetcher.h in Headers */,
+				52E78F29B7B6E85D600B1041342109DB /* RCStoreKitWrapper.h in Headers */,
+				C8678F96B402A67762933E6F7BD261F3 /* RCSubscriberAttribute+Protected.h in Headers */,
+				4283E4027EF567DAC64F3A445DEC7990 /* RCSubscriberAttribute.h in Headers */,
+				195024D5BD9D0B94DA711E4EE21F6E14 /* RCSubscriberAttributesManager.h in Headers */,
+				152C78F28E05148F25344309D5D8BC19 /* RCSystemInfo.h in Headers */,
+				459E0A9E40A0591B346A83402FFF4328 /* RCTransaction.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7957C975DC7B48F13E18A77431EB820 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335945CDC95AAC3776B77531F1FC6EB3 /* Pods-calm-mind-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		19EF5509BA60F0CD4916B9F24A2F7886 /* Purchases */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A1727B394648EE901A10F39348B26A3 /* Build configuration list for PBXNativeTarget "Purchases" */;
+			buildPhases = (
+				AB571A87174D9CA3CD4570E8B01F0129 /* Headers */,
+				7607BB298F3F1CA697E1A2BF8BF826B8 /* Sources */,
+				CE2A589D03A024565296CDCE4F55F3F8 /* Frameworks */,
+				D213BD03DA9F557C9EB0AB545EB9BE64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6B71A2BB54DB9A4CCCA49260886A727 /* PBXTargetDependency */,
+			);
+			name = Purchases;
+			productName = Purchases;
+			productReference = FBA7F9EF3FAEB0BC7D79BB1AFF265A06 /* Purchases.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2BC2CC6A5EB8F91429DC14E6BDC342DF /* PurchasesCoreSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBB6CBDEC825F7CADC4B664A0D2499F5 /* Build configuration list for PBXNativeTarget "PurchasesCoreSwift" */;
+			buildPhases = (
+				1AED479331F3D8A47E125AA4C3E4190E /* Headers */,
+				9DA668080EF0D52D1D90EE7C8A8C9001 /* Sources */,
+				8B7BC0C8B05C89E642A2962B832A599B /* Frameworks */,
+				C4B1399555DE6BD45DB6B811C824FF0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PurchasesCoreSwift;
+			productName = PurchasesCoreSwift;
+			productReference = A8744BFCBA0EFF3EFCB22EF6E0408B42 /* PurchasesCoreSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B6BDD7306446261D50EB14B97376F699 /* Pods-calm-mind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9A8E851625B816D11F2D4132A218FA3 /* Build configuration list for PBXNativeTarget "Pods-calm-mind" */;
+			buildPhases = (
+				D7957C975DC7B48F13E18A77431EB820 /* Headers */,
+				F76961E7C1D8EE699680C871ADEE7247 /* Sources */,
+				DD7F3A9A3038508C13C10CF9EC20EF1F /* Frameworks */,
+				ACD2068599F983F16B781EB6FD96F6F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C84C7AABECF66233A062BAC9CCF8AE96 /* PBXTargetDependency */,
+				F819BE1067F504415EAA2767D83B1A51 /* PBXTargetDependency */,
+			);
+			name = "Pods-calm-mind";
+			productName = "Pods-calm-mind";
+			productReference = E3758240AA9C1AB477C1A5A3379A7AEE /* Pods_calm_mind.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 82972E33A40B4C522213A835C0E49947 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6BDD7306446261D50EB14B97376F699 /* Pods-calm-mind */,
+				19EF5509BA60F0CD4916B9F24A2F7886 /* Purchases */,
+				2BC2CC6A5EB8F91429DC14E6BDC342DF /* PurchasesCoreSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACD2068599F983F16B781EB6FD96F6F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B1399555DE6BD45DB6B811C824FF0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D213BD03DA9F557C9EB0AB545EB9BE64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7607BB298F3F1CA697E1A2BF8BF826B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F682A9EEF9225584D975F0725D2639A /* NSData+RCExtensions.m in Sources */,
+				9E86B1F2450339BCCEB67DB8F36EE434 /* NSDate+RCExtensions.m in Sources */,
+				BF6E0C4C5186DA1B2955634AD84E40BC /* NSDictionary+RCExtensions.m in Sources */,
+				89D0FF1B40D5E981514FE669C8A8643F /* NSError+RCExtensions.m in Sources */,
+				4E318D0E488A7CD6F340A59483E11FA7 /* NSLocale+RCExtensions.m in Sources */,
+				D60BF519F5703F1638570F7DBE1F7850 /* Purchases-dummy.m in Sources */,
+				268C923D5753A23AC098C97B7CFBBE5F /* RCAttributionData.m in Sources */,
+				6A4BEC3FEA72DC3C0B91509A850533DA /* RCAttributionFetcher.m in Sources */,
+				13CA36D487C0BC06ADFE309D4D37252D /* RCBackend.m in Sources */,
+				66592755E68603B4F9762B111EDA3526 /* RCDateProvider.m in Sources */,
+				FE02197675E297AEEDB249FB33CBBD6A /* RCDeviceCache.m in Sources */,
+				5215CCABC9B7AFACB1C0B93B0A2AD672 /* RCEntitlementInfo.m in Sources */,
+				F544AB89C05AAC723FC1089709E7377F /* RCEntitlementInfos.m in Sources */,
+				6C9B5A0CE8BF3253E20229EDAFDAC12A /* RCHTTPClient.m in Sources */,
+				25FBF59814A4D17212888706FF692D40 /* RCHTTPRequest.m in Sources */,
+				F09515456D553C816B5A87A53EAA1FCE /* RCIdentityManager.m in Sources */,
+				89AB6DBE4DF5C18347827AEC4899A780 /* RCInMemoryCachedObject.m in Sources */,
+				A1FB2E1D613974FB63ABEF649DA49457 /* RCIntroEligibility.m in Sources */,
+				EA8F11A20AFA442A54285C79A822E78D /* RCISOPeriodFormatter.m in Sources */,
+				BFD2CBC47F4B91B6DF0904EE3ECCF054 /* RCLogUtils.m in Sources */,
+				46FE7DD5DA778F124DF8465BEFD7CFF4 /* RCOffering.m in Sources */,
+				EC3328778FFE688561C8176F182EBCBE /* RCOfferings.m in Sources */,
+				67EBC24E08D6DC0D3A53FE5AF7F6AE6F /* RCOfferingsFactory.m in Sources */,
+				E8E9D76A9EA04553588F12A46EC5CC3E /* RCPackage.m in Sources */,
+				323CC37A59200E1139B68DC6F800A760 /* RCProductInfo.m in Sources */,
+				D9D26CCD5543A430129CE008A01E5ECA /* RCProductInfoExtractor.m in Sources */,
+				7AFA33F27E3FE5278AA577AABCB58726 /* RCPromotionalOffer.m in Sources */,
+				FBECA83B8E280FDB6DAFCE9048B8550F /* RCPurchaserInfo.m in Sources */,
+				54BA9227A6734B2E20217E646C93A5B0 /* RCPurchases+SubscriberAttributes.m in Sources */,
+				64DDCDEBE4C7663DE788A835067C1923 /* RCPurchases.m in Sources */,
+				4D60B35A9692461A83C67FDC444FEBB5 /* RCPurchasesErrorUtils.m in Sources */,
+				71861AAA6F7FAC798B789F4C4837A51C /* RCReceiptFetcher.m in Sources */,
+				5C4055F7B4015328AF63A134C16D79C8 /* RCStoreKitRequestFetcher.m in Sources */,
+				3899A105EEED58439560FCA4B0C43701 /* RCStoreKitWrapper.m in Sources */,
+				37A839D754E695E553DF46FAB66D3354 /* RCSubscriberAttribute.m in Sources */,
+				F3995BBD875D1474CA1A0F57E4ED4B42 /* RCSubscriberAttributesManager.m in Sources */,
+				B20598774B6B58A3852514196429AD83 /* RCSystemInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA668080EF0D52D1D90EE7C8A8C9001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				508B969E293E9D530C35D452ECC7F2C7 /* AppleReceipt.swift in Sources */,
+				BE1799BE116B4C087916E28AB71F081B /* AppleReceiptBuilder.swift in Sources */,
+				BB7167CA498C8FE4C1CA3AF31F9744E2 /* ArraySlice_UInt8+Extensions.swift in Sources */,
+				F792580943AF69C52023DE9060E9EEC4 /* ASN1Container.swift in Sources */,
+				2A56178D9AE4CA3D9A344827807E7124 /* ASN1ContainerBuilder.swift in Sources */,
+				69321C7A5D5F3E23833EABBC41150392 /* ASN1ObjectIdentifier.swift in Sources */,
+				55FC26FB3398D6D794E287AEBA5F9BC4 /* ASN1ObjectIdentifierBuilder.swift in Sources */,
+				C8F7B485A358F76FD93036187080D3D4 /* AttributionStrings.swift in Sources */,
+				8D57263836FD33060ACBAD9F14083C9E /* DateExtensions.swift in Sources */,
+				3A2FCCF03349542E73EF906625CF2339 /* InAppPurchase.swift in Sources */,
+				688C879CAB8FA63547436A5FC9218554 /* InAppPurchaseBuilder.swift in Sources */,
+				08DA5DC6F3DEA5F41B46B4D9A8503576 /* IntroEligibilityCalculator.swift in Sources */,
+				C7FD55F097E9884ABBB6CC54782769D1 /* ISO3601DateFormatter.swift in Sources */,
+				686EF1EE35E0D02AE6FD9751FB3C3839 /* OperationDispatcher.swift in Sources */,
+				84E4D2CB4BAF15436064DD440F86A43E /* ProductsManager.swift in Sources */,
+				FE889AE379F62C9ED547A83C42A2A9AE /* ProductsRequestFactory.swift in Sources */,
+				79EB563DC883ABF028727C110F14F46C /* PurchasesCoreSwift-dummy.m in Sources */,
+				89682F97BA5CCB7AF043549CD4BD2789 /* ReceiptParser.swift in Sources */,
+				817AC795B4736545B1C77CCDFD5F6A81 /* ReceiptParsingError.swift in Sources */,
+				69010EF98D54267770E13579A1D5EFC3 /* Strings.swift in Sources */,
+				B3D2DBB77672221B4126DCB8C11821D7 /* Transaction.swift in Sources */,
+				080B618ABD58BA804F310D1738069665 /* TransactionsFactory.swift in Sources */,
+				65028C2B3E7B787B704C42606E736371 /* UInt8+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76961E7C1D8EE699680C871ADEE7247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				397093C3046EBFE4036A8D6E4C25278F /* Pods-calm-mind-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C84C7AABECF66233A062BAC9CCF8AE96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Purchases;
+			target = 19EF5509BA60F0CD4916B9F24A2F7886 /* Purchases */;
+			targetProxy = 740944A13D88C81B42BD9BFA75034603 /* PBXContainerItemProxy */;
+		};
+		E6B71A2BB54DB9A4CCCA49260886A727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PurchasesCoreSwift;
+			target = 2BC2CC6A5EB8F91429DC14E6BDC342DF /* PurchasesCoreSwift */;
+			targetProxy = 9E44F9EE268BAB5681A411DAC8AF5513 /* PBXContainerItemProxy */;
+		};
+		F819BE1067F504415EAA2767D83B1A51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PurchasesCoreSwift;
+			target = 2BC2CC6A5EB8F91429DC14E6BDC342DF /* PurchasesCoreSwift */;
+			targetProxy = FCC298E20725D272E532AF5F65CBC491 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		075ACB22495D886E8128905350D0C125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD4CC8CD46EB75E1D83BB0B9297466E9 /* Pods-calm-mind.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-calm-mind/Pods-calm-mind-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-calm-mind/Pods-calm-mind.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		56AE30C00FACD293546E7C7A5BE5947A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B1EC43D035484A9B9F6B0010A518907 /* PurchasesCoreSwift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PurchasesCoreSwift/PurchasesCoreSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PurchasesCoreSwift/PurchasesCoreSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PurchasesCoreSwift/PurchasesCoreSwift.modulemap";
+				PRODUCT_MODULE_NAME = PurchasesCoreSwift;
+				PRODUCT_NAME = PurchasesCoreSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6446ECC48FE1DEA730AF52A529414C6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2B686595E51771F6F825E2789FFD5AE /* PurchasesCoreSwift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PurchasesCoreSwift/PurchasesCoreSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PurchasesCoreSwift/PurchasesCoreSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PurchasesCoreSwift/PurchasesCoreSwift.modulemap";
+				PRODUCT_MODULE_NAME = PurchasesCoreSwift;
+				PRODUCT_NAME = PurchasesCoreSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9CCC6E2AD885621E7304DD0E5BC02D8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EB42D7C1DE3D1C019814488DC99F2D0 /* Pods-calm-mind.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-calm-mind/Pods-calm-mind-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-calm-mind/Pods-calm-mind.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC18AB0B9D01D7A0BEC517D3AD99A9C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 173403D9233DC83DD4A2D8EEED0880BF /* Purchases.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Purchases/Purchases-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Purchases/Purchases-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Purchases/Purchases.modulemap";
+				PRODUCT_MODULE_NAME = Purchases;
+				PRODUCT_NAME = Purchases;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FD38B3CE058D6CB6FB213CA368FA8620 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 087225F362E5FB6A81CC8F5C4BFD86A2 /* Purchases.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Purchases/Purchases-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Purchases/Purchases-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Purchases/Purchases.modulemap";
+				PRODUCT_MODULE_NAME = Purchases;
+				PRODUCT_NAME = Purchases;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A1727B394648EE901A10F39348B26A3 /* Build configuration list for PBXNativeTarget "Purchases" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC18AB0B9D01D7A0BEC517D3AD99A9C6 /* Debug */,
+				FD38B3CE058D6CB6FB213CA368FA8620 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9A8E851625B816D11F2D4132A218FA3 /* Build configuration list for PBXNativeTarget "Pods-calm-mind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				075ACB22495D886E8128905350D0C125 /* Debug */,
+				9CCC6E2AD885621E7304DD0E5BC02D8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBB6CBDEC825F7CADC4B664A0D2499F5 /* Build configuration list for PBXNativeTarget "PurchasesCoreSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56AE30C00FACD293546E7C7A5BE5947A /* Debug */,
+				6446ECC48FE1DEA730AF52A529414C6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

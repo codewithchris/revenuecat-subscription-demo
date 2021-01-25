@@ -1,0 +1,20 @@
+PODS:
+  - Purchases (3.8.0):
+    - PurchasesCoreSwift (= 3.8.0)
+  - PurchasesCoreSwift (3.8.0)
+
+DEPENDENCIES:
+  - Purchases (= 3.8.0)
+
+SPEC REPOS:
+  trunk:
+    - Purchases
+    - PurchasesCoreSwift
+
+SPEC CHECKSUMS:
+  Purchases: 6d5e1cdba3de4766d39b0f166bb851bdfffe179c
+  PurchasesCoreSwift: 638f04384b60f44c8728d0af7a10785bbd747cab
+
+PODFILE CHECKSUM: da09ec65fa4b69a882a7d9a00deeccaa0ab91f43
+
+COCOAPODS: 1.10.0
