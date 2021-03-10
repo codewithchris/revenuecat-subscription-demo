@@ -1,4 +1,4 @@
-# In App Purchases Tutorial 2020 - Auto Renewable Subscriptions (iOS / SwiftUI)
+# In App Purchases Tutorial - Auto Renewable Subscriptions (iOS / SwiftUI)
 This is the SwiftUI demo project that we showed in our video tutorial below.
 
 ## YouTube Video Tutorial (Click to watch):
